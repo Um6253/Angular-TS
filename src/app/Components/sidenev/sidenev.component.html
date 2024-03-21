@@ -1,0 +1,149 @@
+
+
+    <!-- <div class="out">
+    
+        <button class="logo1" (click)="toggleCollapse()">
+            <span class="material-symbols-outlined">
+            menu
+        </span></button>
+        <div class="pic">
+            <img [src]="imageUrl">
+        </div>
+    </div> -->
+    
+    <!-- <div class="out">
+        <button class="logo1" (click)="toggleCollapse()">
+            <span class="material-symbols-outlined">
+                menu
+            </span></button>
+            <div class="pic">
+                <img  [src]="imageUrl">
+            </div>
+            <div id="keep">Keep</div>
+            <div class="out2">
+                
+     
+         <button class="logo2"><span class="material-symbols-outlined">
+            Search
+        </span></button>
+        <button><span class="material-symbols-outlined">
+            Refresh
+        </span></button>
+        <button><span class="material-symbols-outlined">
+            view_agenda
+        </span></button>
+        <button><span class="material-symbols-outlined">
+            settings
+         </span></button>
+         <button ><span class="material-symbols-outlined">
+           Apps
+         </span></button>
+         <button><span class="material-symbols-outlined">
+           Account_Circle
+         </span></button>
+        
+        </div>
+    </div >         -->
+<div class ="big">
+    <mat-toolbar class="toolbar">
+        <button mat-icon-button class="logo1" (click)="toggleCollapse()">
+            <span class="material-symbols-outlined">
+                menu
+            </span></button>
+         <div class="pic">
+             <img  [src]="imageUrl">
+         </div>
+         <div id="keep">Keep</div>
+         <div class="space"></div>
+         <button mat-icon-button><span class="material-symbols-outlined">
+            Search
+        </span></button>
+        <button mat-icon-button>
+            <span class="material-symbols-outlined">
+            Refresh
+            </span>
+            </button>
+        <button mat-icon-button><span class="material-symbols-outlined">
+            view_agenda
+        </span></button>
+        <button mat-icon-button><span class="material-symbols-outlined">
+            settings
+         </span></button>
+         <button mat-icon-button><span class="material-symbols-outlined">
+           Apps
+         </span></button>
+         <button mat-icon-button><span class="material-symbols-outlined">
+           Account_Circle
+         </span></button>
+            
+    </mat-toolbar>
+    <div class="lowerhalf">
+        <div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''" mode="side">
+        
+            <ul class="sidenav-nav">
+                <li class="sidenav-nav-item" *ngFor="let data of navData"> 
+                    <a class=" sidenav-nav-link" [routerLink]="['notes']"> 
+                        
+                        <!-- <i class="sidenav-link-icon " [class]="data.icon"></i> -->
+                        <span class="material-symbols-outlined">
+                            lightbulb
+                            </span>
+                            
+                            <span class="sidenav-link-text " *ngIf="collapsed">Notes</span>
+                        </a>
+                </li>
+                <li class="sidenav-nav-item" *ngFor="let data of navData">
+                    <a class=" sidenav-nav-link" [routerLink]="['rem']">
+                        <span class="material-symbols-outlined">
+                            notifications
+                            </span>
+                        <span class="sidenav-link-text " *ngIf="collapsed">Reminders</span>
+                         
+                    </a>
+                </li>
+                <li class="sidenav-nav-item" *ngFor="let data of navData">
+                    <a class=" sidenav-nav-link ">
+                        <span class="material-symbols-outlined">
+                            label
+                            </span>
+                        <span class="sidenav-link-text " *ngIf="collapsed">Label</span>
+                         
+                    </a>
+                </li>
+                <li class="sidenav-nav-item" *ngFor="let data of navData">
+                    <a class=" sidenav-nav-link"[routerLink]="['edlab']">
+                        <span class="material-symbols-outlined">
+                            edit
+                            </span>
+                        <span class="sidenav-link-text " *ngIf="collapsed">Edit Label</span>
+                         
+                    </a>
+                </li>
+                <li class="sidenav-nav-item" *ngFor="let data of navData">
+                    <a class=" sidenav-nav-link "[routerLink]="['archi']">
+                        <span class="material-symbols-outlined">
+                            archive
+                        </span>
+                        <span class="sidenav-link-text " *ngIf="collapsed">Archive</span>   
+                    </a>
+                </li>
+                <li class="sidenav-nav-item" *ngFor="let data of navData">
+                    <a class=" sidenav-nav-link "[routerLink]="['bin']">
+                        <span class="material-symbols-outlined">
+                            delete
+                            </span>
+                        <span class="sidenav-link-text " *ngIf="collapsed">Bin</span>   
+                    </a>
+                </li>
+                
+            </ul>
+    
+        </div>
+        <!-- <app-get-notes></app-get-notes> -->
+        <!-- <app-body></app-body> -->
+        <mat-sidenav-container class="route" [ngStyle]="{'width': collapsed ? '':'90vw'}">
+            <router-outlet></router-outlet>
+        </mat-sidenav-container>
+    </div>
+    </div>
+      
