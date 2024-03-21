@@ -1,0 +1,45 @@
+<div class="icons">
+        <button class="icon2">
+            <span class="material-symbols-outlined">
+                add_alert
+            </span>
+        </button>
+        <button class="icon2">
+            <span class="material-symbols-outlined">
+                person_add
+            </span>
+        </button>
+    <button class="icon2">
+        <span class="material-symbols-outlined"[matMenuTriggerFor]="colorMenu">
+            palette
+        </span>
+    </button>
+    <button class="icon2">
+        <span class="material-symbols-outlined">
+            image
+        </span>
+    </button>
+    <button class="icon2">
+        <span class="material-symbols-outlined"(click)="ArchiveOn()">
+            archive
+        </span>
+    </button>
+    <button class="icon2">
+        <span class="material-symbols-outlined"[matMenuTriggerFor]="More">
+            more_vert
+        </span>
+    </button>
+    <mat-menu #More="matMenu" xPosition="before">
+        <button mat-menu-item (click)="onDelete()">Delete note</button>
+        <button mat-menu-item >Add Label</button>
+        <button mat-menu-item >Add drawing</button>
+        <button mat-menu-item >Make a copy</button>
+        <button mat-menu-item >Show tick boxes</button>
+        <button mat-menu-item >Version history</button>
+    </mat-menu>
+    <mat-menu #colorMenu="matMenu" xPosition="before" id="colorcard" class="colors2">
+        <div *ngFor ='let colors of ColorArray' style="display: flex;">
+             <button class="colorsIcon"[style.background]="colors.code" style="width: 20px;height: 20px; border-radius: 50%;display: flex;flex-direction: column;justify-items: center;"  (click)="selectColor(colors)"></button> 
+        </div>
+    </mat-menu>
+</div>
