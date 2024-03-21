@@ -1,0 +1,11 @@
+.icon{
+    display: flex;
+    flex-direction: column;
+    font-size: 4vh;
+    color:gray;
+}
+.icon .material-symbols-outlined {
+    font-size: 20vh;
+    margin-left: 60px;
+    color:gray; /* Adjust the value as needed */
+}
