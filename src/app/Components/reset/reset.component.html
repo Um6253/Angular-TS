@@ -1,0 +1,43 @@
+
+<div class="contain">
+    <div class="Reg">
+        <div class="pic">
+            <img [src]="imageUrl">
+        </div>
+        <div class="Signin">
+            <p class="reg">Change Password</p>
+        </div>
+        <form [formGroup]="resetForm"(ngSubmit)="ResetSubmit()">
+                <div class="Offic">
+                    <p class="name">Create a strong password with a mixture of letters, numbers and symbols</p>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input matInput placeholder="Password" formControlName="Password">
+                        <mat-error *ngIf="resetForm.hasError('required', 'Password')">
+                            Password is Required!
+                        </mat-error>
+                        <mat-error *ngIf="resetForm.hasError('pattern', 'Password')">
+                            Weak Password!
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Confirm Password</mat-label>
+                        <input matInput placeholder="ConfirmPassword"formControlName="ConfirmPassword">
+                        <mat-error *ngIf="resetForm.hasError('required', 'ConfirmPassword')">
+                            ConfirmPassword is Required!
+                        </mat-error>
+                        <mat-error *ngIf="resetForm.hasError('pattern', 'Password')">
+                            Password is Not Matching!
+                        </mat-error>
+                    </mat-form-field>
+                    <div class="Submit">
+                        <!-- <button mat-raised-button color="primary">Back</button> -->
+                        <button mat-raised-button color="primary">Submit</button>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </form>
+    </div>
+</div>
+
+
