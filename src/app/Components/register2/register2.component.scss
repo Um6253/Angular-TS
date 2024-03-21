@@ -1,0 +1,117 @@
+.Reg{
+    display: flex;
+   flex-direction:column;
+   border: 1px solid white;
+   height:85vh;
+   width: 140vh;
+  //margin-bottom:10px;
+   box-shadow: 5px 5px 5px rgb(24, 24, 24);
+ 
+   //justify-content:space;
+   flex-wrap: wrap;
+   border-radius: 5vh;
+   padding: 4vh;
+   background-color: white;
+ }
+ .reg{
+     font-size: 4vh;
+     color: rgb(12, 12, 12);
+ 
+ }
+ .name{
+    font-size: 2.8vh;
+}
+ 
+ .Signin{ 
+    display: flex;
+    flex-direction:column;
+   //margin-top: -240px;
+   row-gap: 3vh;
+    align-items: center;
+    margin-bottom: 30px;
+}
+ .person{ 
+    // display: flex;
+    // flex-direction:row;
+    // column-gap: 5vh;
+    // margin-bottom: 15px;
+    display: grid;
+     grid-template-columns: 35vh 35vh;
+     justify-content: center;
+     column-gap: 5.5vh;
+     //flex-wrap: wrap;
+    margin-bottom: 35px;
+    margin-top: 150px;
+    margin-right: 10vh;
+}
+.email{ 
+    display: flex;
+    flex-direction:column;
+    row-gap: 1vh;
+   margin-left: vh;
+   margin-right: 10vh;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    //flex-wrap: wrap;
+   // align-items:start
+    
+}
+.Offic{ 
+    display: grid;
+    grid-template-columns: 35vh 35vh;
+    justify-content: center;
+    column-gap: 6.5vh;
+    margin-left: -10vh;
+    margin-bottom: 30px;
+    //row-gap: 2vh;
+}
+// img{
+//     max-width: 100%;
+//     max-height: 100%;
+
+//  }
+//  .pic{
+//     display: grid;
+//     grid-template-columns: 17vh ;
+//     justify-content: center;
+//     margin-top: 10px;
+//     margin-bottom: 30px;
+//    // margin-left: 30vw;
+//  }
+//  .pic2{
+//     display: grid;
+//     grid-template-columns: 40vh ;
+//     justify-content: start;
+//     margin-top: 10px;
+//     margin-bottom: 30px;
+//  }
+
+ .Submit{
+   
+    display: flex;
+    flex-direction:column;
+    //row-gap: 1vh;
+   // margin-left: -vw;
+   margin-right: 4vw;
+    margin-top: 30px;
+    margin-bottom: -30px;
+
+ }
+ 
+
+ 
+ 
+ 
+ 
+ 
+//  .account{
+//      font-size: 3vh;
+//  }
+ .contain{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100vw;
+     height: 100vh;
+     background-color: whitesmoke;
+ }
