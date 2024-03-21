@@ -1,0 +1,4 @@
+
+    <app-body (RefreshCreate)="ReceiverCreate($event)"></app-body>
+    <!-- <app-edit-notes></app-edit-notes>"disp" -->
+<app-display-notes  [NotesList]="NotesArray"(RefreshEdit)="ReceiverEdit($event)"></app-display-notes>
