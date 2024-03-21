@@ -1,0 +1,50 @@
+
+<div class="contain">
+    <div class="login">
+        <div class="pic">
+            <img [src]="imageUrl">
+        </div>
+        <div class="Signin">
+            <p class="sign">Sign in</p>
+            <p class="account">with your Google Account</p>
+        </div>
+        <form [formGroup]="loginForm"(ngSubmit)="LoginSubmit()">
+            <div class="EP">
+                <mat-form-field appearance="outline">
+                    <mat-label>Email or Phone</mat-label>
+                    <input matInput placeholder="Email or Phone" formControlName="Email">
+                    <mat-error *ngIf="loginForm.hasError('required', 'Email')">
+                        Email is Required!
+                    </mat-error>
+                    <mat-error *ngIf="loginForm.hasError('email', 'Email')">
+                        Email is Invalid!
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput placeholder="Password" formControlName="Password" [type]="hide ? 'password':'text'">
+                    <mat-error *ngIf="loginForm.hasError('required', 'Password')">
+                        Password is Required!
+                    </mat-error>
+                    <mat-error *ngIf="loginForm.hasError('pattern', 'Password')">
+                        Weak Password!
+                    </mat-error>
+                </mat-form-field>
+                <div class="Ct">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="showpassword" (change)="hide=!hide">
+                        <label for="showpassword">Show Password</label>
+                    </div>
+                    <div class="forget">
+                        <a href="http://localhost:63949/forgot"style="text-decoration: none;font-size: 110%;">Forgot Password?</a>
+                    </div>
+                </div>
+            </div>
+            <div class="Create">
+                <a href="http://localhost:63261/reg" style="text-decoration: none;font-size: 110%;">Create Account</a>
+                <button mat-raised-button color="primary">Sign in</button>
+            </div>
+        </form>
+    </div>
+</div>
+
