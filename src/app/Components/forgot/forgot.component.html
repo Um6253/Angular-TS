@@ -1,0 +1,40 @@
+<div class="contain">
+    <div class="Reg">
+        <div class="pic">
+            <img [src]="imageUrl">
+        </div>
+        <div class="Signin">
+           <p class="reg" >Account Recovery</p>
+           <p class="name" >Enter your Email</p>
+          
+        </div>
+       
+        <form [formGroup]="forgotForm"(ngSubmit)="forgetSubmit()">
+            <div class="person">
+                <p class="info">To help keep your account safe, Google wants to make sure its's really you  trying to sign in</p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Email or Phone</mat-label>
+                    <input matInput placeholder="Email or Phone" formControlName="Email">
+                    <mat-error *ngIf="forgotForm.hasError('required', 'Email')">
+                        Email is Required!
+                    </mat-error>
+                    <mat-error *ngIf="forgotForm.hasError('email', 'Email')">
+                        Invalid Email!
+                    </mat-error>
+                </mat-form-field>
+           
+            </div>
+        
+                <div class="Submit">
+                   
+                    <button mat-raised-button color="primary">Submit</button>
+                </div>
+            
+        </form>         
+            
+    </div>
+</div>
+
+
+
+ <!-- <button mat-raised-button color="primary">Back</button> -->
