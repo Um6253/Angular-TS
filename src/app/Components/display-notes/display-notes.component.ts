@@ -15,7 +15,7 @@ export class DisplayNotesComponent {
    message:any
    @Input()NotesList:any;
    @Output() RefreshEdit=new EventEmitter<string>();
-   @Output() RefreshArchive=new EventEmitter<string>();
+  
 
   EditNoteDialogBox(Notes:any){
    const dialogbox= this.dialog.open(EditNotesComponent,{ 
@@ -30,6 +30,12 @@ export class DisplayNotesComponent {
     
     })
     
+  }
+  ReceiverEvent($event:any){
+    console.log("Refresh Event Successfull"+$event);
+    this.message=$event
+    this.RefreshEdit.emit(this.message)
+
   }
  
 }

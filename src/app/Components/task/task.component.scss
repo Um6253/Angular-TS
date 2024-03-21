@@ -1,0 +1,176 @@
+.login1{
+    display: flex;
+   flex-direction: column;
+  
+   height: 70vh;
+   width: 55vh;
+   box-shadow: 3px 3px 3px #181818;
+   //margin-top: 25px;
+   justify-content:space-around;
+   border-radius: 5vh;
+   padding: 3vh;
+   background-color: white;
+margin-bottom: -10vh;
+ }
+.Box1{
+    display: flex;
+    flex-direction: column;
+   // height:35vh;
+    background-color:rgb(3, 16, 54);
+    border-radius: 5vh;
+   ;
+   
+
+}
+ .con1{
+    display: flex;
+     flex-direction:column;
+     margin-bottom: 3vh;
+     margin-top: -45px;
+    
+ }
+
+
+.Ct1{
+    display: flex;
+     flex-direction:row;
+    justify-content:space-between;
+    margin-bottom: 3vh;
+    margin-top: -13vh;
+  
+}
+.reg1{
+    font-size: 5vh;
+    color: white;
+
+    margin-top:40px;
+}
+.reg2{
+    font-size: 3.5vh;
+    color: black;
+}
+.name1{
+    font-size: 3vh;
+    color: white;
+}
+
+
+
+ .Signin1{ 
+     display: flex;
+     flex-direction:column;
+     row-gap: 3vh;
+     align-items: center;
+     margin-bottom: 40px;
+ }
+ 
+ .sign{
+     font-size: 4vh;
+     color: rgb(12, 12, 12);
+    
+ 
+ }
+ 
+ .contain{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100vw;
+     height: 100vh;
+     background-color: whitesmoke;
+     
+ }
+ .Submit1{
+   
+    display: flex;
+    flex-direction:column;
+    margin-left: 1vw;
+   margin-right: 1vw;
+   margin-top: -6vh;
+   color:rgb(3, 16, 54);
+ }
+ #but{
+    background-color:rgb(3, 16, 54);
+ }
+//  .login2{
+//     display: flex;
+//    flex-direction: column;
+//    //border: 0.5px solid black;
+//    //height:95vh;
+//    height: 75vh;
+//    width: 55vh;
+//    box-shadow: 3px 3px 3px #181818;
+//    margin-top: -25px;
+//    justify-content:space-around;
+//    border-radius: 5vh;
+//    padding: 3vh;
+//    background-color: white;
+//  }
+// .Box2{
+//     display: flex;
+//     flex-direction: column;
+//     height:95vh;
+//     background-color:rgb(3, 16, 54);
+//     border-radius: 5vh;
+//    ;
+   
+
+// }
+//  .con2{
+//     display: flex;
+//      flex-direction:column;
+//      margin-bottom: 3vh;
+//      margin-top: -45px;
+    
+//  }
+
+
+// .Ct2{
+//     display: flex;
+//      flex-direction:row;
+//     justify-content:space-between;
+//     margin-bottom: 3vh;
+//     margin-top: -13vh;
+  
+// }
+// .reg3{
+//     font-size: 5vh;
+//     color: white;
+
+//     margin-top:40px;
+// }
+// .reg4{
+//     font-size: 3.5vh;
+//     color: black;
+// }
+// .name2{
+//     font-size: 3vh;
+//     color: white;
+// }
+
+
+
+//  .Signin3{ 
+//      display: flex;
+//      flex-direction:column;
+//      row-gap: 3vh;
+//      align-items: center;
+//      margin-bottom: 50px;
+//  }
+ 
+//  .sign2{
+//      font-size: 4vh;
+//      color: rgb(12, 12, 12);
+    
+ 
+//  }
+ 
+
+//  .Submit2{
+   
+//     display: flex;
+//     flex-direction:column;
+//     margin-left: 1vw;
+//    margin-right: 1vw;
+//    margin-top: -6vh;
+//  }

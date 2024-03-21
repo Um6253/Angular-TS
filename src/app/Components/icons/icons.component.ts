@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { NoteService } from '../../Services/Noteservices/note.service';
 
 @Component({
@@ -8,6 +8,7 @@ import { NoteService } from '../../Services/Noteservices/note.service';
 })
 export class IconsComponent implements OnInit{
   @Input() Notesobj:any
+  @Output() RefreshEvent=new EventEmitter<string>()
   ngOnInit(): void {
     
   }
@@ -20,7 +21,7 @@ export class IconsComponent implements OnInit{
     console.log(reqData)
     this.Notes.TrashNotes(reqData).subscribe ((response: any)=>{
        console.log("Note Trashed Successfully", response);
-        // this.refreshEvent.emit(response); 
+        this.RefreshEvent.emit(response);
     
     })
     
@@ -33,7 +34,8 @@ export class IconsComponent implements OnInit{
     console.log(reqData)
     this.Notes.ArchievNotes (reqData).subscribe((response:any) =>{ console.log(response)
     
-    // this.refreshEvent.emit(response);
+    
+    this.RefreshEvent.emit(response);
     
     })
   }
@@ -60,7 +62,7 @@ export class IconsComponent implements OnInit{
    
      this.Notes.NoteColor(reqData).subscribe ((response: any)=>{
         console.log("Note Colored Successfully", response);
-         // this.refreshEvent.emit(response); 
+          this.RefreshEvent.emit(response); 
      
      })
     }
