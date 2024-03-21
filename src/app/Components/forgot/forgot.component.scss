@@ -1,0 +1,91 @@
+.Reg{
+    display: flex;
+   flex-direction: column;
+   border: 1px solid black;
+   height:65vh;
+   width: 65vh;
+  //margin-bottom:10px;
+   box-shadow: 5px 5px 5px rgb(24, 24, 24);
+ 
+   justify-content:space-between;
+   flex-wrap: wrap;
+   border-radius: 5vh;
+   padding: 4vh;
+   background-color: white;
+ }
+ .reg{
+     font-size: 4.5vh;
+     color: rgb(12, 12, 12);
+     //justify-content: center;
+     //row-gap: 10vh;
+    // text-shadow: 2px 2px 4px rgba(124, 123, 122, 0.989);
+ 
+ }
+ .name{
+    font-size: 3vh;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    //align-items: center;
+    //justify-content: center;
+ }
+ .pic{
+    display: grid;
+    grid-template-columns: 17vh ;
+    justify-content: center;
+    margin-top: 10px;
+ }
+ 
+ .Signin{ 
+    display: flex;
+    flex-direction:column;
+   //margin-top: 85px;
+   row-gap: 5vh;
+    align-items: center;
+    margin-top: -40px;
+}
+ .person{ 
+    display: flex;
+    flex-direction:column;
+    row-gap: 3vh;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    //align-items:m;
+}
+
+
+// .PO{ 
+//     display: flex;
+//     flex-direction: column;
+//     row-gap: 3vh;
+    
+// }
+
+ .Submit{
+   
+    display: grid;
+    //grid-template-columns: 20vh;
+    //justify-content: center;
+    //column-gap: 25vh;
+    margin-bottom: 20px;
+
+ }
+ 
+
+ 
+ 
+ 
+ 
+ 
+//  .account{
+//      font-size: 3vh;
+//  }
+ .contain{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100vw;
+     height: 100vh;
+     background-color:whitesmoke;
+ }
